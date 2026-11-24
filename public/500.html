@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background-color: aliceblue;
+        font-family: "Poppins";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 600px;
+        height: auto;
+        background-color: white;
+        box-shadow: 2px 4px 10px 5px rgba(110, 110, 110, 0.205);
+        border-radius: 10px;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container .image {
+        width: 100%;
+    }
+
+    .container .image img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .container p {
+        margin-top: -40px;
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .container .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .btn button {
+        width: 300px;
+        padding: 20px;
+        font-size: 1.2rem;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        background-color: blue;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .container .btn button:hover {
+        background-color: crimson;
+        transform: scale(1.03);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="image"><img
+                src="https://images.openai.com/static-rsc-4/eTw_YIrKNoWWn9AsC50GR33wwukYOyOtOEr_mN3nB7PL7mZjBp-LJXDtVOlVpyEjx9yXWN3lpsrwyQiu35rrOOIY2l_50rLRT8XyzTlK4uWGn35XzR8QO-L0AaZ1wDqm6l5uhHMg2a1U4hnkQxHb6rkwXR5OXtsYNONzRa2gBdphcKfWfSF87EUBgEfIhIRL?purpose=fullsize"
+                alt="500"></div>
+        <p>Something went wrong on our server
+            <br>Please try again later.
+        </p>
+        <div class="btn"><button> <i class="fa-regular fa-house"></i> Go Back Home</button></div>
+    </div>
+</body>
+
+</html>
