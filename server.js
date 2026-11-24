@@ -2,12 +2,14 @@ const express = require("express");
 // const product = require("./product");
 const path = require("path");
 const mysql = require("mysql2/promise");
+const authRoutes = require("./routes/auth.routes");
 const productRoutes = require("./routes/product.routes");
 
 const app = express();
 app.use(express.json());
 
 app.use("/api/v1", productRoutes);
+app.use("/api/auth", authRoutes);
 
 // const pool = mysql.createPool({
 //   host: "localhost",
